@@ -13,6 +13,7 @@ body {
   height: auto;
   border: 2px black solid;
   padding: 10px;
+
 }
 
 
@@ -26,7 +27,7 @@ body {
   font-size: 0.8em;
   color: black;
   overflow: hidden;
-  border: 1px red dotted;
+
 }
 
 .slider-container {
