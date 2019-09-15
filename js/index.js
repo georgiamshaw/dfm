@@ -1,65 +1,76 @@
 // MOCK DATA
 
 const mockData = {
-  "left_label": "leave",
-  "right_label": "remain",
-  "news": [{
-    "source_name": "Lifehacker.com",
-    "title": "What You Should Know About a 'No-Deal' Brexit",
-    "url": "https://lifehacker.com/what-you-should-know-about-a-no-deal-brexit-1837665694",
-    "position": "0"
-  }, {
-    "source_name": "The New York Times",
-    "title": "Your Wednesday Briefing",
-    "url": "https://www.nytimes.com/2019/09/04/briefing/dorian-brexit-ariana-grande.html",
-    "position": "10"
-  }, {
-    "source_name": "Mashable",
-    "title": "Portuguese national interrupts TV interview, gives moving speech about Brexit's impact",
-    "url": "https://mashable.com/article/brexit-portuguese-national-sky-news-interview/",
-    "position": "20"
-  }, {
-    "source_name": "The New York Times",
-    "title": "Your Tuesday Briefing",
-    "url": "https://www.nytimes.com/2019/09/03/briefing/boat-fire-brexit-naomi-osaka.html",
-    "position": "30"
-  }, {
-    "source_name": "The New York Times",
-    "title": "Your Thursday Briefing",
-    "url": "https://www.nytimes.com/2019/09/05/briefing/south-carolina-brexit-us-open.html",
-    "position": "40"
-  }, {
-    "source_name": "CNN",
-    "title": "'Fight to the death' in Parliament over Brexit",
-    "url": "https://www.cnn.com/videos/world/2019/09/04/boris-johnson-brexit-parliament-rebel-alliance-vpx.cnn",
-    "position": "50"
-  }, {
-    "source_name": "TechCrunch",
-    "title": "Fitbit, Andela, AfricaTech, startups and Brexit, plus content moderation",
-    "url": "http://techcrunch.com/2019/08/30/fitbit-andela-africatech-startups-and-brexit-plus-content-moderation/",
-    "position": "60"
-  }, {
-    "source_name": "The New York Times",
-    "title": "Taliban, Brexit, Juul: Your Monday Evening Briefing",
-    "url": "https://www.nytimes.com/2019/09/09/briefing/taliban-brexit-juul.html",
-    "position": "70"
-  }, {
-    "source_name": "BBC News",
-    "title": "Brexit: What happened on Thursday?",
-    "url": "https://www.bbc.co.uk/news/av/uk-politics-49601230/brexit-what-happened-on-thursday",
-    "position": "80"
-  }, {
-    "source_name": "The New York Times",
-    "title": "Your Wednesday Briefing",
-    "url": "https://www.nytimes.com/2019/09/04/briefing/dorian-brexit-ariana-grande.html",
-    "position": "90"
-  }, {
-    "source_name": "BBC News",
-    "title": "Brexit: What happened on Monday?",
-    "url": "https://www.bbc.co.uk/news/av/uk-politics-49558313/brexit-what-happened-on-monday",
-    "position": "100"
-  }]
-}
+   "left_label": "leave",
+   "right_label": "remain",
+   "news": [{
+       "source_name": "Gizmodo.com",
+       "title": "UK Government Plans to Collect 'Targeted and Personalized' Data on Internet Users to Prepare For Brexit: Report",
+       "url": "https://lifehacker.com/what-you-should-know-about-a-no-deal-brexit-1837665694",
+       "position": "0"
+     },
+     {
+       "source_name": "The New York Times",
+       "title": "Taliban, Brexit, Juul: Your Monday Evening Briefing",
+       "url": "https://www.nytimes.com/2019/09/09/briefing/taliban-brexit-juul.html",
+       "position": "10"
+     },
+     {
+       "source_name": "The New York Times",
+       "title": "Boris Johnson’s Do-or-Die Debacle",
+       "url": "https://www.nytimes.com/2019/09/06/opinion/boris-johnson-brexit-election.html",
+       "position": "20"
+     },
+     {
+       "source_name": "Mashable",
+       "title": "Portuguese national interrupts TV interview, gives moving speech about Brexit's impact",
+       "url": "https://mashable.com/article/brexit-portuguese-national-sky-news-interview/",
+       "position": "30"
+     },
+     {
+       "source_name": "Mashable",
+       "title": "Petition against suspending parliament ahead of Brexit passes 1.3 million signatures",
+       "url": "https://mashable.com/article/brexit-prorogation-petition/",
+       "position": "40"
+     },
+     {
+       "source_name": "BBC News",
+       "title": "UK government to ask Queen to suspend Parliament",
+       "url": "https://www.bbc.co.uk/news/uk-politics-49493632",
+       "position": "50"
+     },
+     {
+       "source_name": "CNN",
+       "title": "Analysis: Trump barges into Britain's Brexit crisis",
+       "url": "https://www.cnn.com/2019/08/28/politics/trump-johnson-brexit/index.html",
+       "position": "60"
+     },
+     {
+       "source_name": "Reuters",
+       "title": "Britain to 'unshackle' officials from most EU meetings ahead of Brexit",
+       "url": "https://www.reuters.com/article/us-britain-eu-meetings-idUSKCN1VA1GH",
+       "position": "70"
+     },
+     {
+       "source_name": "Reuters",
+       "title": "UK getting positive reception from Europe on Brexit plan: Raab",
+       "url": "https://www.reuters.com/article/us-britain-eu-raab-europe-idUSKCN1VO0KG",
+       "position": "80"
+     },
+     {
+       "source_name": "BBC News",
+       "title": "Brexit: Labour urges Parliament recall after no-deal Brexit papers released",
+       "url": "https://www.bbc.co.uk/news/uk-politics-49671566",
+       "position": "90"
+     },
+     {
+       "source_name": "The New York Times",
+       "title": "Boris Johnson Shortens the Fuse on Brexit",
+       "url": "https://www.nytimes.com/2019/08/28/opinion/brexit-parliament.html",
+       "position": "100"
+     }
+   ]
+ }
 
 // POPULATE PAGE
 
