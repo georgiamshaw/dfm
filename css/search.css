@@ -123,3 +123,11 @@ button {
 .trending-topic-6 {
   border-left: 2px solid #c0c0c0;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
