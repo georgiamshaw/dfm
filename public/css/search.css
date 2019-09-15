@@ -3,7 +3,7 @@ body {
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover; */
-  /* background-color: black; */
+  background-color: black;
   font-family: "Montserrat", sans-serif;
   height: 100vh;
 }
@@ -54,23 +54,15 @@ button {
 
 .line {
   position: relative;
-}
-.line:before,
-.line:after {
   border-top: 13px solid #dfdfdf;
   content: "";
-  position: absolute;
-  top: 4rem;
-  right: 27.1em;
-  bottom: 0;
-  width: 35vw;
+  width: 90vw;
+  z-index: -10;
 }
-.line:after {
-  position: absolute;
-  top: 4rem;
-  left: 27.1em;
-  right: 0;
-  bottom: 0;
+
+.trending-topic-title {
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 600px) {
