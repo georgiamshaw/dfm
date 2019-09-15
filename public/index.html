@@ -4,9 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+
+    <title>Results page</title>
   </head>
   <body>
-    <script src="./js/script"></script>
+
+    <section class="article-slider-container">
+
+      <section class="article-container">
+        <h2 class="article-title">Cameron accuses Johnson and Gove of behaving appallingly over Brexit</h1>
+        <a class="article-link" href="https://www.theguardian.com/politics/2019/sep/13/david-cameron-accuses-boris-johnson-and-michael-gove-of-behaving-appallingly-over-brexit">
+          www.theguardian.com
+        </a>
+      </section>
+
+      <section class="slider-container">
+        <label class="slider-label" for="sentiment">Sentiment</label>
+        <input type="range" class="slider-input" name="sentiment"
+               min="0" max="100" value="50" step="1">
+        <p class="slider-value">50</p>
+      </section>
+
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

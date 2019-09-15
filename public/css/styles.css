@@ -1,0 +1,82 @@
+body {
+  font-family: Helvetica, Sans-Serif;
+}
+
+.article-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-container {
+  width: 200px;
+  height: auto;
+  border: 2px black solid;
+  padding: 10px;
+}
+
+
+.article-title {
+  max-width: 90%;
+  font-size: 1em;
+}
+
+.article-link {
+  max-width: 90%;
+  font-size: 0.8em;
+  color: black;
+  overflow: hidden;
+  border: 1px red dotted;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-label {
+  display: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.slider-input {
+  width: 500px;
+  margin-top: 60px;
+}
+
+.slider-value {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Special styling for WebKit/Blink */
+.slider-input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  color: red;
+  box-sizing: 50px;
+  border-radius: 50px;
+  border: 15px solid;
+
+  /* height: 0px;
+  width: 0px;
+  border-radius: 3px; */
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px 1px red; /* Add cool effects to your sliders! */ */
+
+}
+
+.slider-input[type=range]::-webkit-slider-runnable-track {
+
+  height: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+  background: linear-gradient(to left, /* Colour theme: allows text fading into top nav */
+      rgba(252,34,34, 1),
+      rgba(33,184,216, 1) 100%);
+  /* border-radius: 1.3px;
+  border: 0.2px solid #010101; */
+}
