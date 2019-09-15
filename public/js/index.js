@@ -1,3 +1,5 @@
+console.log();
+
 
 const sliderButton = document.querySelector('.slider-input');
 const sliderValue = document.querySelector('.slider-value');

@@ -1,11 +1,21 @@
 body {
   font-family: Helvetica, Sans-Serif;
+  background-color: black;
+  color: white;
 }
 
 .article-slider-container {
+  width: 600px; /* Needs to match .article-slider-input width */
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.article-slider-title {
+  font-size: 2em;
+  align-self: baseline;
+  margin-bottom: 80px;
 }
 
 .article-container {
@@ -19,13 +29,15 @@ body {
 
 .article-title {
   max-width: 90%;
-  font-size: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  line-height: 1.4em;
 }
 
 .article-link {
   max-width: 90%;
   font-size: 0.8em;
-  color: black;
+  color: white;
   overflow: hidden;
 
 }
@@ -43,7 +55,7 @@ body {
 }
 
 .slider-input {
-  width: 500px;
+  width: 600px; /* Needs to match .article-slider-container width */
   margin-top: 60px;
 }
 
@@ -52,32 +64,91 @@ body {
   font-weight: bold;
 }
 
-/* Special styling for WebKit/Blink */
-.slider-input[type=range]::-webkit-slider-thumb {
+
+
+/* WHITE THIN */
+
+input[type=range] {
   -webkit-appearance: none;
-  color: red;
-  box-sizing: 50px;
-  border-radius: 50px;
-  border: 15px solid;
-
-  /* height: 0px;
-  width: 0px;
-  border-radius: 3px; */
-  cursor: pointer;
-  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px 1px red; /* Add cool effects to your sliders! */ */
-
+  margin: 10.8px 0;
 }
-
-.slider-input[type=range]::-webkit-slider-runnable-track {
-
-  height: 20px;
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
   cursor: pointer;
-  border-radius: 20px;
-  /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
-  background: linear-gradient(to left, /* Colour theme: allows text fading into top nav */
-      rgba(252,34,34, 1),
-      rgba(33,184,216, 1) 100%);
-  /* border-radius: 1.3px;
-  border: 0.2px solid #010101; */
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ffffff;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 2px solid #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #ffffff;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 2px solid #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #f2f2f2;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ffffff;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  border: 2px solid #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  height: 3px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ffffff;
 }
