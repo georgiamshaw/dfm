@@ -11,14 +11,21 @@ body {
 h1 {
   text-align: center;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .body-wrap {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 4rem;
+  align-items: center;
 }
 
 .form-wrap {
@@ -45,6 +52,19 @@ button {
   font-size: 1rem;
 }
 
+.line {
+  position: relative;
+  border-top: 13px solid #dfdfdf;
+  content: "";
+  width: 90vw;
+  z-index: -10;
+}
+
+.trending-topic-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
 @media only screen and (max-width: 600px) {
   .form-wrap {
     flex-direction: column;
@@ -61,4 +81,45 @@ button {
   button {
     margin-top: 0.5rem;
   }
+}
+
+.trending-topic-wrap {
+  /* background-color: blue; */
+  display: grid;
+  /* height: 20rem; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 40% 40%;
+  width: 50vw;
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+  color: #999999;
+}
+
+.trending-topic-title {
+  /* padding: 2rem; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* border: 1px solid black; */
+  /* border-bottom: 2px solid black; */
+  /* height: 50px; */
+  align-self: center;
+  padding: 1rem;
+}
+
+.trending-topic {
+  /* border: 1px solid black; */
+  height: 10vh;
+  border-top: 2px solid #c0c0c0;
+  /* padding: 2rem; */
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.trending-topic-2,
+.trending-topic-3,
+.trending-topic-5,
+.trending-topic-6 {
+  border-left: 2px solid #c0c0c0;
 }
