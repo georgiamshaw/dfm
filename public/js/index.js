@@ -49,10 +49,15 @@ const mockData = {
     "url": "https://www.bbc.co.uk/news/av/uk-politics-49601230/brexit-what-happened-on-thursday",
     "position": "80"
   }, {
+    "source_name": "The New York Times",
+    "title": "Your Wednesday Briefing",
+    "url": "https://www.nytimes.com/2019/09/04/briefing/dorian-brexit-ariana-grande.html",
+    "position": "90"
+  }, {
     "source_name": "BBC News",
     "title": "Brexit: What happened on Monday?",
     "url": "https://www.bbc.co.uk/news/av/uk-politics-49558313/brexit-what-happened-on-monday",
-    "position": "90"
+    "position": "100"
   }]
 }
 
@@ -64,6 +69,12 @@ for (let x = 0; x < mockData.news.length; x++) {
   let newArticle = document.createElement('section');
   newArticle.setAttribute('class', 'article-container');
   newArticle.setAttribute('id', mockData.news[x].position);
+  newArticle.setAttribute('style', `margin-left: ${mockData.news[x].position}%`);
+
+  let newPosition = document.createElement('p');
+  newPosition.setAttribute('class', 'article-position');
+  newPosition.innerText = `Position: ${mockData.news[x].position}%`;
+  newArticle.appendChild(newPosition);
 
   let newTitle = document.createElement('h2');
   newTitle.setAttribute('class', 'article-title');
@@ -76,8 +87,12 @@ for (let x = 0; x < mockData.news.length; x++) {
   newLink.innerText = mockData.news[x].source_name;
   newArticle.appendChild(newLink);
 
-  newArticle.setAttribute('style', 'display: none')
+  newArticle.setAttribute('style', `display: none;`)
+  if (mockData.news[x].position === 50) {
+    newArticle.setAttribute('style', `display: block;`)
+  }
   mainContainer.appendChild(newArticle);
+
 }
 
 
@@ -91,8 +106,9 @@ const sliderValue = document.querySelector('.slider-value');
 sliderButton.addEventListener('change', (event) => {
   let containers = document.querySelectorAll('.article-container');
   containers.forEach(article => {article.style.display = 'none'});
-  sliderValue.innerText = event.target.value;
+  // sliderValue.innerText = `Position: ${event.target.value}`;
   document.getElementById(`${event.target.value}`).setAttribute('style', 'display:block');
+
 })
 
 
